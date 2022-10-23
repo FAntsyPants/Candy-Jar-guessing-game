@@ -23,7 +23,7 @@ number = candy_jar["number of pieces"]
 candy_type = candy_jar["candy type"]
 turns = candy_jar["number of turns"]
 jar_size = candy_jar["jar size"]
-pick_candy = candy_jar["candy type"][random.randint(0, 2)]
+pick_candy = random.choice(candy_jar["candy type"])
 
 def remove_lid():
     #for however many turns the jar takes, print "turning..." wait, and then loop again
